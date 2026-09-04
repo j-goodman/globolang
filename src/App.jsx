@@ -27,7 +27,9 @@ function App() {
       {
         selectedId && course ? (
           <>
-            <button></button>
+            <button onClick={
+              () => { setSelectedId(null) }
+            }>←</button>
             <CourseDetail course={course} language={language}/>
           </>
         ) : (
