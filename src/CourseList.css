@@ -18,3 +18,15 @@
   object-fit: cover;
   flex: 0 0 auto;
 }
+
+.course-list__button {
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+}
+
+.course-list__button:hover {
+  cursor: pointer;
+}

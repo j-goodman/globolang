@@ -6,7 +6,7 @@ import CourseList from './CourseList'
 function App() {
   const [courses, setCourses] = useState([])
   const [languages, setLanguages] = useState([])
-  const [selectedId, setSelectedId] = useState(13)
+  const [selectedId, setSelectedId] = useState(null)
 
   useEffect(() => {
     fetch(`https://j-goodman.github.io/language-class-data/data/class-list.json`)
@@ -24,7 +24,16 @@ function App() {
   const language = languages.find(lang => lang.language === course?.language)
   return (
     <div>
-      <CourseList courses={courses} languages={languages}/>
+      {
+        selectedId && course ? (
+          <>
+            <button></button>
+            <CourseDetail course={course} language={language}/>
+          </>
+        ) : (
+          <CourseList courses={courses} languages={languages} selectCourse={setSelectedId}/>
+        )
+      }
     </div>
   )
 }
