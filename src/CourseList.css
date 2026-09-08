@@ -1,0 +1,28 @@
+.course-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #d1d5db;
+}
+
+.course-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.course-flag {
+  width: 24px;
+  height: 16px;
+  flex: 0 0 auto;
+  object-fit: cover;
+}
+
+.course-details {
+  display: flex;
+  gap: 0.5rem;
+}

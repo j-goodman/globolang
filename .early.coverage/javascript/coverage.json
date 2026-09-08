@@ -1,0 +1,56 @@
+{
+  "/": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null
+  },
+  "/eslint.config.js": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null,
+    "testables": []
+  },
+  "/vite.config.js": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null,
+    "testables": []
+  },
+  "/src": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null
+  },
+  "/src/App.jsx": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null,
+    "testables": [
+      {
+        "name": "App",
+        "percentage": null,
+        "totalStatements": null,
+        "coveredStatements": null
+      }
+    ]
+  },
+  "/src/CourseDetail.jsx": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null,
+    "testables": [
+      {
+        "name": "CourseDetail",
+        "percentage": null,
+        "totalStatements": null,
+        "coveredStatements": null
+      }
+    ]
+  },
+  "/src/main.jsx": {
+    "percentage": null,
+    "totalStatements": null,
+    "coveredStatements": null,
+    "testables": []
+  }
+}
