@@ -13,8 +13,7 @@
 }
 
 .course-list__flag {
-  width: 24px;
-  height: 18px;
+  width: 36px;
   object-fit: cover;
   flex: 0 0 auto;
 }
