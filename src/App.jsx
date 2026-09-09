@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import CourseDetail from "./CourseDetail";
 import CourseList from "./CourseList";
+import LanguageFilter from "./LanguageFilter";
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -26,6 +27,14 @@ function App() {
   const language = languages.find((lang) => lang.language === course?.language);
   return (
     <div>
+      <LanguageFilter
+        Languages={languages}
+        selectedLanguage={course?.language || ""}
+        setSelectedLanguage={(lang) => {
+          const newCourse = courses.find((c) => c.language === lang);
+          if (newCourse) setSelectedId(newCourse.id);
+        }}
+      />
       selectedId
       <CourseList courses={courses} languages={languages} />
       {course && <CourseDetail course={course} language={language} />}
