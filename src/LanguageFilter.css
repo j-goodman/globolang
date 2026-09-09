@@ -1,0 +1,23 @@
+.language-filter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 40px;
+}
+
+.language-filter img {
+    cursor: pointer;
+    max-width: 100px;
+    transition: .1s;
+    border: 4px solid rgb(70, 100, 195, 0);
+}
+
+.language-filter img:hover {
+    transform: scale(1.05);
+}
+
+.language-filter .selected-flag {
+    border: 4px solid rgb(70, 100, 195);
+}
