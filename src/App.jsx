@@ -24,9 +24,17 @@ function App() {
 
   const course = courses.find(c => c.id === selectedId)
   const language = languages.find(lang => lang.language === course?.language)
+
+  const availableLanguages = languages.filter(lang => {
+    return courses.some(course => {
+      return course.language === lang.language
+    })
+  })
+  console.log(availableLanguages)
+
   return (
     <div>
-      <LanguageFilter languages={languages} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
+      <LanguageFilter languages={availableLanguages} selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
       {
         selectedId && course ? (
           <>
